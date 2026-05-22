@@ -16,8 +16,7 @@
     },
     "require-dev": {
         "carthage-software/mago": "^1.28",
-        "phpstan/phpstan": "^2.1",
-        "roave/security-advisories": "dev-master"
+        "phpstan/phpstan": "^2.1"
     },
     "autoload": {
         "files": [
