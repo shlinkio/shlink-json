@@ -7,8 +7,8 @@ extends = "vendor/shlinkio/shlink-mago-config/mago.toml"
 
 [source]
 workspace = "."
-paths = ["config", "functions", "src", "test"]
-excludes = ["vendor"]
+paths = ["functions"]
+includes = ["vendor"]
 
 [source.glob]
 literal-separator = true
@@ -17,3 +17,5 @@ literal-separator = true
 no-literal-password = { exclude = ["test"] }
 no-empty-catch-clause = { exclude = ["test"] }
 no-empty-loop = { exclude = ["test"] }
+
+[analyzer]

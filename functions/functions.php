@@ -18,7 +18,8 @@ use const JSON_THROW_ON_ERROR;
  */
 function json_decode(string $json): array
 {
-    return spl_json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+    // @mago-expect analysis:mixed-return-statement
+    return spl_json_decode($json, associative: true, flags: JSON_THROW_ON_ERROR);
 }
 
 /**
